@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Оренда та спільне використання ділянок землі</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Оренда та спільне використання ділянок землі</h1>
+    <nav>
+      <a href="index.html">Головна</a>
+      <a href="login.html">Вхід</a>
+      <a href="register.html">Реєстрація</a>
+    </nav>
+  </header>
+  <main>
+    <section class="welcome">
+      <h2>Ласкаво просимо!</h2>
+      <p>Тут ви можете знайти або здати в оренду ділянку, поділитися досвідом та дізнатися більше про вирощування рослин.</p>
+    </section>
+
+    <section class="listings">
+      <h2>Актуальні оголошення</h2>
+      <div class="filters">
+        <select id="locationFilter">
+          <option value="">Всі місця</option>
+          <option value="Київ">Київ</option>
+          <option value="Львів">Львів</option>
+          <option value="Харків">Харків</option>
+          <option value="Одеса">Одеса</option>
+        </select>
+        <select id="typeFilter">
+          <option value="">Всі типи</option>
+          <option value="city">Міська ділянка</option>
+          <option value="suburb">Приміська ділянка</option>
+          <option value="village">Сільська ділянка</option>
+        </select>
+        <input type="number" id="sizeFilter" placeholder="Мін. площа (соток)">
+      </div>
+
+      <div class="listings-grid" id="listingsContainer">
+        <!-- Оголошення будуть додані через JavaScript -->
+      </div>
+    </section>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html> 

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Реєстрація</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Реєстрація</h1>
+    <nav>
+      <a href="index.html">Головна</a>
+      <a href="login.html">Вхід</a>
+    </nav>
+  </header>
+  <main>
+    <form id="registerForm">
+      <div class="form-group">
+        <label for="fullName">Повне ім'я:</label>
+        <input type="text" id="fullName" name="fullName" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Телефон:</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+
+      <div class="form-group">
+        <label for="confirmPassword">Підтвердження паролю:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+      </div>
+
+      <div class="form-group">
+        <label for="userType">Тип користувача:</label>
+        <select id="userType" name="userType" required>
+          <option value="renter">Орендар</option>
+          <option value="owner">Власник землі</option>
+          <option value="both">І те, і те</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="location">Місцезнаходження:</label>
+        <input type="text" id="location" name="location" placeholder="Місто/село" required>
+      </div>
+
+      <div class="form-group">
+        <label>
+          <input type="checkbox" id="terms" name="terms" required>
+          Я погоджуюсь з умовами використання та політикою конфіденційності
+        </label>
+      </div>
+
+      <button type="submit">Зареєструватися</button>
+    </form>
+    <div id="registerMessage"></div>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html> 

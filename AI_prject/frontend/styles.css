@@ -1,0 +1,191 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+header {
+  background: #388e3c;
+  color: #fff;
+  padding: 1em 0;
+  text-align: center;
+}
+nav a {
+  color: #fff;
+  margin: 0 1em;
+  text-decoration: none;
+  font-weight: bold;
+}
+main {
+  max-width: 500px;
+  margin: 2em auto;
+  background: #fff;
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+input {
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+button {
+  margin-top: 1.5em;
+  padding: 0.7em;
+  background: #388e3c;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+button:hover {
+  background: #2e7031;
+}
+#loginMessage, #registerMessage {
+  margin-top: 1em;
+  color: #d32f2f;
+}
+
+/* Загальні стилі */
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  padding: 0.5rem;
+}
+
+nav a:hover {
+  background-color: #45a049;
+  border-radius: 4px;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Стилі для секції привітання */
+.welcome {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+/* Стилі для фільтрів */
+.filters {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.filters select,
+.filters input {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  min-width: 200px;
+}
+
+/* Стилі для сітки оголошень */
+.listings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.listing-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.listing-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.listing-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.listing-content {
+  padding: 1rem;
+}
+
+.listing-title {
+  font-size: 1.2rem;
+  margin: 0 0 0.5rem 0;
+  color: #333;
+}
+
+.listing-location {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.listing-details {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.listing-price {
+  font-size: 1.2rem;
+  color: #4CAF50;
+  font-weight: bold;
+}
+
+.listing-description {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.listing-button {
+  display: block;
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.listing-button:hover {
+  background-color: #45a049;
+} 
